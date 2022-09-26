@@ -1,0 +1,17 @@
+<body style="background-color: black;">
+
+<h1 style="background-color: gold;"><center>HOLIDAY MANAGEMENT SYSTEM</center></h1>
+<p align="right"><a href='/'><button class=grey>Home</button></a></p>
+<p align="left"><a href='portal'><button class=grey>Back</button></a></p>
+<center>
+    <table border="1" style="color: white;">
+        {% for hday in hday1 %}
+            <tr>
+                <td>{{hday[0]}}</td>
+                <td>{{hday[1]}}</td>
+                <td>{{hday[2]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>

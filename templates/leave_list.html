@@ -1,0 +1,16 @@
+<body style="background-color: black;">
+    <h1 style="background-color: gold;"><center>LEAVE LIST</center></h1>
+    <!-- <p align="right"><a href='/'><button class=grey>Home</button></a></p> -->
+<p align="left"><a href='portal'><button class=grey>Back</button></a></p>
+    <center>
+        <table border="1" style="background-color: turquoise; color: black;">
+            {% for lday in lday %}
+                <tr>
+                    <td>{{lday[0]}}</td>
+                    <td>{{lday[1]}}</td>
+                    <td>{{lday[2]}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+    </body>
